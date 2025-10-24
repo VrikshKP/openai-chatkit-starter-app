@@ -167,6 +167,14 @@ export function ChatKitPanel({
         });
       }
 
+      // If we already have a valid secret, reuse it to maintain conversation context
+      if (currentSecret) {
+        if (isDev) {
+          console.info("[ChatKitPanel] Reusing existing session to maintain context");
+        }
+        return currentSecret;
+      }
+
       if (!isWorkflowConfigured) {
         const detail =
           "Set NEXT_PUBLIC_CHATKIT_WORKFLOW_ID in your .env.local file.";
@@ -178,9 +186,7 @@ export function ChatKitPanel({
       }
 
       if (isMountedRef.current) {
-        if (!currentSecret) {
-          setIsInitializingSession(true);
-        }
+        setIsInitializingSession(true);
         setErrorState({ session: null, integration: null, retryable: false });
       }
 

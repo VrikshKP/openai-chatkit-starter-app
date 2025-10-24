@@ -1,10 +1,10 @@
-# ChatKit Starter Template
+# CAT Doubt Solver
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 ![NextJS](https://img.shields.io/badge/Built_with-NextJS-blue)
 ![OpenAI API](https://img.shields.io/badge/Powered_by-OpenAI_API-orange)
 
-This repository is the simplest way to bootstrap a [ChatKit](http://openai.github.io/chatkit-js/) application. It ships with a minimal Next.js UI, the ChatKit web component, and a ready-to-use session endpoint so you can experiment with OpenAI-hosted workflows built using [Agent Builder](https://platform.openai.com/agent-builder).
+An AI-powered doubt solving assistant for CAT (Common Admission Test) exam preparation. Built using [ChatKit](http://openai.github.io/chatkit-js/) and OpenAI's [Agent Builder](https://platform.openai.com/agent-builder) platform.
 
 ## What You Get
 
